@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Nearby Hospitals</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet.js and Leaflet Routing Machine CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Main Grid Layout -->
+    <div class="grid grid-cols-12 gap-4">
+      <!-- Hospitals List (Left) -->
+      <div id="hospitals-list" class="col-span-3 bg-white rounded-lg shadow p-4 space-y-4">
+        <h2 class="text-red-600 font-bold">Nearby Hospitals</h2>
+      </div>
+
+      <!-- Map Section (Center) -->
+      <div class="col-span-6">
+        <h1 class="text-4xl font-bold text-white text-center mb-4">Find Nearby Hospitals</h1>
+
+        <!-- Map Container -->
+        <div id="map" class="rounded-lg shadow mb-4"></div>
+
+        <!-- Buttons for location options -->
+        <div class="flex justify-center space-x-4">
+          <button id="use-current-location" class="bg-red-500 text-white px-4 py-2 rounded shadow">Use Current Location</button>
+          <button id="drop-custom-location" class="bg-blue-500 text-white px-4 py-2 rounded shadow">Drop Custom Location</button>
+        </div>
+
+        <!-- Current Location Display -->
+        <div class="text-center mt-4">
+          <p id="current-address" class="text-xl font-bold text-white"></p>
+        </div>
+      </div>
+
+      <!-- Directions List (Right) -->
+      <div id="directions-list" class="col-span-3 bg-white rounded-lg shadow p-4 space-y-4">
+        <h2 class="text-red-600 font-bold">Directions</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ffe5e5, #f87171, #f43f5e);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+#map {
+  height: 24rem;
+  border-radius: 0.75rem;
+}
+
+.custom-div-icon {
+  background-color: #ff4444;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.hospital-marker {
+  background-color: #ef4444;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+}
+
+.current-location-marker {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+}
+
+.custom-location-marker {
+  background-color: #f59e0b;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+}
+
+.leaflet-routing-container {
+  display: none;
+}
